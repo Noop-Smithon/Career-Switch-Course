@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="CSS/caculator.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
     <title>Smithon's Center</title>
   </head>
   <body>
@@ -43,71 +44,48 @@
           </ul>
         </div>
       </nav>
-      <section class="sector">
-        <div class="sector-container">
-          <div class="sector-left">
-            <h1>Smithon's Fitness Center</h1>
-            <h3>
-              Your home to achieving all your fitness goals. We got you covered,
-              all you just need is show up and put in the work. If you're in
-              doubt or confused on where to start, our team of professional
-              trainers are always at your service to guide you to your ultimate goals.
-            </h3>
-            <form action="">
-              <button type="submit">Sign-up</button>
-            </form>
-          </div>
-          <div class="sector-right">
-            <img src="./Images/gym-center.jpeg" alt="Gym Center" />
-          </div>
-        </div>
-      </section>
     </header>
-    <section class="segment">
-      <h2>We got you covered</h2>
-      <div class="seg-container">
-        <div class="thumbnails seg1">
-          <a href=""
-            ><img
-              src="./Images/strength-training.svg"
-              alt="strength training icon"
-            />
-            <span class="spn"
-              >Build general body strength and muscle mass</span
-            ></a
-          >
-        </div>
-        <div class="thumbnails seg2">
-          <a href="">
-            <img src="./Images/weight-loss.svg" alt="weight-loss icon" />
-            <span class="spn">Lose fat and gain that aesthetic body</span>
-          </a>
-        </div>
-        <div class="thumbnails seg3">
-          <a href=""
-            ><img src="./Images/nutrition.svg" alt="diet icon" />
-            <span class="spn"
-              >Let's match your diet to fit your fitness goal</span
-            ></a
-          >
-        </div>
-        <div class="thumbnails seg4">
-          <a href=""
-            ><img src="./Images/group-workout.svg" alt="group workout icon" />
-            <span class="spn"
-              >Join our group fitness program and all the fun</span
-            ></a
-          >
-        </div>
-      </div>
-    </section>
-    <div class="calc">
-      <a href="calculator.html">
-        <button class="btn btn-dark">
-          Check our calculator
-        </button>
-      </a>
-    </div>
+    <main class="calculator">
+      <table>
+        <caption>
+          <input type="text" id="result" type="text" value="0" readonly/>
+        </caption>
+        <tr>
+          <td><input type="button" id="allclear" value="ac" onclick="allclear()"></td>
+          <td><input type="button" id="square" value="x&sup2;" onclick="square()"></td>
+          <td><input type="button" id="percent" value="%" onclick="percent()"></td>
+          <td><input type="button" id="divide" value="&divide;" onclick="operators(4)"></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" id="seven" value="7" onclick="input(7)"></td>
+          <td><input type="button" id="eight" value="8" onclick="input(8)"></td>
+          <td><input type="button" id="nine" value="9" onclick="input(9)"></td>
+          <td><input type="button" id="multiply" value="&times;" onclick="operators(3)"></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" id="four" value="4" onclick="input(4)"></td>
+          <td><input type="button" id="five" value="5" onclick="input(5)"></td>
+          <td><input type="button" id="six" value="6" onclick="input(6)"></td>
+          <td><input type="button" id="subtract" value="&minus;" onclick="operators(2)"></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" id="one" value="1" onclick="input(1)"></td>
+          <td><input type="button" id="two" value="2" onclick="input(2)"></td>
+          <td><input type="button" id="three" value="3" onclick="input(3)"></td>
+          <td><input type="button" id="add" value="&plus;" onclick="operators(1)"></td>
+        </tr>
+
+        <tr>
+          <td><input type="button" id="plusminus" value="&plusmn;" onclick="plusminus()"></td>
+          <td><input type="button" id="zero" value="0" onclick="input(0)"></td>
+          <td><input type="button" id="decimal" value="." onclick="decimalpoint()"></td>
+          <td><input type="button" id="equals" value="=" onclick="equals()"></td>
+        </tr>
+      </table>
+    </main>
     
   </body>
   <footer class="asd">

@@ -1,0 +1,54 @@
+
+.calculator{
+  display: block;
+  margin-top: 130px;
+  text-align: center;
+  border: 1px white solid;
+  padding: 7px 16px;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+.calculator a{
+  color: white;
+  text-decoration: none;
+}
+
+table{
+  border: 0 solid var(--secondaryColor);
+  border-radius: 0.5em;
+  border-collapse: collapse;
+  width: 95%;
+  margin-left: 2.5%;
+  background-color: var(--secondaryColor);
+}
+
+caption {
+font-size: 1.5em;
+border: 0.5em solid var(--secondaryColor);
+border-radius: 0.5em;
+background-color: var(--secondaryColor);
+}
+
+caption input{
+  width: 100%;
+  border-radius: none;
+  height: 2.4em;
+  font-size: 2em;
+}
+
+th, td {
+  border: 0 solid var(--secondaryColor);
+  padding: 0.8em;
+  text-align: center;
+}
+
+tr input{
+  width: 95%;
+  border-radius: 0.5em;
+  height: 3em;
+  font-size: 2em;
+}
+caption input{
+  text-align: right;
+}

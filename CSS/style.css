@@ -321,6 +321,21 @@ main {
   }
 }
 
+
+/* Check-our-calculator button styling */
+.calc {
+  display: block;
+  margin: 50px auto;
+  text-align: center;
+  cursor: pointer;
+  padding: 7px 16px;
+}
+
+.calc a {
+  color: rgb(1, 0, 0);
+  text-decoration: none;
+}
+
 /* Footer styling */
 .asd {
   background-color: hsla(0, 0%, 0%, 0.952);
